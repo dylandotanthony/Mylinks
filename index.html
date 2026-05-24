@@ -52,7 +52,14 @@
           background-color: #ffffff;
       }
       .button:hover { filter: brightness(0.9); color: #000000; }
-
+.responsive-title {
+    font-family: 'Rock Salt', cursive !important;
+    /* This scales from 1.2rem on tiny phones up to 1.8rem on desktops */
+    font-size: clamp(1.2rem, 5vw, 1.8rem) !important; 
+    color: black;
+    line-height: 1.1;
+    display: inline-block;
+}
       /* Specific Payment/Social Styles */
       .button-venmo { background-color: #3d95ce !important; color: #ffffff !important; border: 1px solid #000 !important; }
       .button-paypal { background-color: #00457c !important; color: #ffffff !important; border: 1px solid #000 !important; }
