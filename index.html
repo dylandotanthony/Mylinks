@@ -48,6 +48,17 @@
               width: 75% !important;
           }
       }
+
+      /* Custom Accordion Styling to match LittleLink */
+      .accordion-button:not(.collapsed) {
+          background-color: rgba(0,0,0,0.05);
+          color: inherit;
+          box-shadow: none;
+      }
+      .accordion-button:focus {
+          box-shadow: none;
+          border-color: rgba(0,0,0,0.1);
+      }
     </style>
   
   </head>
@@ -81,13 +92,52 @@
 
                   <div class="col-12 col-lg-5">
                     <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
-                      <div class="card-body text-center d-flex flex-column justify-content-center pb-2">
-                        <h3 class="card-title h4 mb-3">Fresh Sourdough 🛒</h3>
+                      <div class="card-body text-center d-flex flex-column justify-content-center pb-3">
+                        <h3 class="card-title h4 mb-3 mt-2">Fresh Sourdough 🛒</h3>
                         <p class="mb-4 text-muted">Order your loaves, bagels, and specialty focaccia directly from our shop!</p>
-
-                        <a class="button button-default btn-massive w-100 mx-auto" href="https://bakesy.shop/b/dylans-homomade-goods" target="_blank" rel="noopener" role="button" style="padding: 16px !important; font-size: 18px !important; border-radius: 50px;">
+                        
+                        <a class="button button-default btn-massive w-100 mx-auto mb-2" href="https://bakesy.shop/b/dylans-homomade-goods" target="_blank" rel="noopener" role="button" style="padding: 16px !important; font-size: 18px !important; border-radius: 50px;">
                           <img class="icon" aria-hidden="true" src="images/icons/generic-shopping-bag.svg" alt="Shopping Bag Icon">Shop Now
                         </a>
+
+                        <div class="accordion mt-3 w-100 mx-auto" id="breadCareAccordion">
+                          <div class="accordion-item" style="border: none; background: transparent;">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreadCare" aria-expanded="false" aria-controls="collapseBreadCare" style="border-radius: 12px; font-weight: bold; justify-content: center;">
+                                💡 Sourdough Care Tips
+                              </button>
+                            </h2>
+                            <div id="collapseBreadCare" class="accordion-collapse collapse" data-bs-parent="#breadCareAccordion">
+                              <div class="accordion-body text-start mt-2 shadow-sm bg-white" style="border-radius: 12px; font-size: 0.95rem; padding: 20px;">
+                                <p class="mb-1 fw-bold text-center" style="font-size: 1.1rem;">🥖 Dylan’s HomoMade Goods</p>
+                                <p class="mb-4 text-center fst-italic text-muted">Stay crusty.</p>
+                                
+                                <div style="line-height: 1.6;">
+                                  <p class="mb-3"><strong>🥯 Bagels & English Muffs:</strong><br>Keep in the bread bag 1 day, then move to a loosely closed plastic bag.</p>
+                                  
+                                  <p class="mb-3"><strong>🍞 Loaves:</strong><br>Store in the bread bag 1–2 days. Once cut, transfer to a loosely closed plastic bag. Sourdough stays fresh about 4–5 days at room temp.</p>
+                                  
+                                  <p class="mb-3"><strong>✨ Fresh Inclusions:</strong><br>Freeze after 2–3 days once cut for best quality.</p>
+                                  
+                                  <p class="mb-3"><strong>❄️ Freezing:</strong><br>Wrap tightly in plastic wrap, then place in a freezer bag. Slice before freezing for convenience.</p>
+                                  
+                                  <p class="mb-3"><strong>🔥 Refresh:</strong><br>Lightly mist and bake at 350°F for 8–12 minutes. Toast slices as needed.</p>
+                                  
+                                  <p class="mb-3"><strong>🚫 Avoid Refrigeration:</strong><br>It speeds up staling.</p>
+                                  
+                                  <p class="mb-4"><strong>💧 Dry Bread?</strong><br>Lightly moisten, wrap in foil, and warm to revive.</p>
+                                </div>
+
+                                <hr class="my-3">
+                                <p class="mb-0 text-center fw-bold">Questions? Reach out anytime. 🤍</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="button button-default w-100 mx-auto mt-3" href="https://bakesy.shop/b/dylans-homomade-goods/faqs" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="FAQ Icon">Frequently Asked Questions
+                        </a>
+
                       </div>
                     </div>
                   </div>
@@ -163,11 +213,7 @@
                   <div class="col-sm-6">
                     <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
                       <div class="card-body text-center pb-2">
-                        <h3 class="card-title h5 mb-3">More Links 🔗</h3>
-
-                        <a class="button button-cal w-100" href="#" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/cal.svg" alt="Cal.com Logo">Schedule
-                        </a>
+                        <h3 class="card-title h5 mb-3">Reviews & Updates 💌</h3>
 
                         <a class="button button-default w-100" href="https://bakesy.shop/b/dylans-homomade-goods/reviews" target="_blank" rel="noopener" role="button">
                           <img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Bakesy Reviews
@@ -176,13 +222,9 @@
                         <a class="button button-default w-100" href="https://g.page/r/CRrDIEmyyP6HEAE/review" target="_blank" rel="noopener" role="button">
                           <img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Google Reviews
                         </a>
-                        
-                        <a class="button button-default w-100" href="#" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Homepage Icon">Visit Homepage
-                        </a>
 
-                        <a class="button button-default w-100" href="#" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-shopping-tag.svg" alt="Shopping Tag Icon">10% Discount
+                        <a class="button button-default w-100" href="https://subscribepage.io/JWJH7P" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Subscribe to Emails
                         </a>
 
                       </div>
