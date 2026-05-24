@@ -25,36 +25,26 @@
 
     <style>
       /* 1. Shrink all buttons to half their width and keep them centered */
-      .button-stack .button, 
-      .button-stack .button-nextdoor {
+      .button-stack .button {
           width: 50% !important;
           margin-left: auto !important;
           margin-right: auto !important;
-          margin-bottom: 12px !important;
       }
 
-      /* 2. Nextdoor Button Style (Built for Bootstrap) */
+      /* 2. Nextdoor Button Color (It inherits the exact shape from the base .button class!) */
       .button-nextdoor {
           background-color: #82D100 !important;
-          color: white !important;
-          border-radius: 50px !important;
-          display: flex !important;
-          align-items: center !important;
-          justify-content: center !important;
-          text-decoration: none !important;
-          font-weight: bold;
-          border: none !important;
-          transition: opacity 0.2s ease;
+          color: #ffffff !important;
       }
+      
       .button-nextdoor:hover {
-          opacity: 0.85;
-          color: white !important;
+          filter: brightness(0.9);
+          color: #ffffff !important;
       }
 
       /* Media Query: Make buttons slightly wider on tiny phone screens so text fits */
       @media (max-width: 576px) {
-          .button-stack .button, 
-          .button-stack .button-nextdoor {
+          .button-stack .button {
               width: 75% !important;
           }
       }
@@ -77,101 +67,3 @@
               & a wild lil’ starter named Crustpell Roan 💅 Get them carbs 🤤.</p>
 
             <div class="button-stack mt-4" role="navigation">
-                
-                <div class="row g-4">
-
-                  <div class="col-12">
-                    <div class="card shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
-                      <div class="card-body text-center">
-                        <h3 class="card-title h5 mb-3">📅 Sourdough Schedule</h3>
-                        <iframe src="https://calendar.google.com/calendar/embed?src=fa6f05beb1b59977c7330102413a07ac92ddea53dae7249e82ed1dfbd6bd161e%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0; width: 100%; height: 400px; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6">
-                    <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
-                      <div class="card-body text-center pb-2">
-                        <h3 class="card-title h5 mb-3">Follow the Crust 🥖</h3>
-
-                        <a class="button button-faceb w-100" href="https://www.facebook.com/DylansHomoMadeGoods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Find us on Facebook
-                        </a>
-
-                        <a class="button button-instagram w-100" href="https://www.instagram.com/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram
-                        </a>
-
-                        <a class="button button-tiktok w-100" href="https://www.tiktok.com/@dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">TikTok
-                        </a>
-
-                        <a class="button button-linked w-100" href="https://www.linkedin.com/company/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn
-                        </a>
-
-                        <a class="button button-nextdoor w-100" href="https://nextdoor.com/page/dylans-homomade-goods-westminster-co/" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/Nextdoor.svg" alt="Nextdoor_Logo" style="filter: brightness(0) invert(1);">Nextdoor
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6">
-                    <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
-                      <div class="card-body text-center pb-2">
-                        <h3 class="card-title h5 mb-3">Paylinks 💸</h3>
-
-                        <a class="button button-venmo w-100" href="https://account.venmo.com/u/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/venmo.svg" alt="Venmo Logo">Venmo
-                        </a>
-
-                        <a class="button button-paypal w-100" href="https://www.paypal.com/biz/profile/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/paypal.svg" alt="PayPal Logo">PayPal
-                        </a>
-
-                        <a class="button button-amazon w-100" href="https://www.amazon.com/registries/gl/guest-view/1H8P7FQ2QP6O5?ref_=cm_sw_r_cp_ud_ggr-subnav-share_67DF586JW5W3XPYQJHNV" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Wishlist Logo">Amazon Wishlist
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6">
-                    <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
-                      <div class="card-body text-center pb-2">
-                        <h3 class="card-title h5 mb-3">Get in Touch 📱</h3>
-
-                        <a class="button button-whatsapp w-100" href="https://wa.me/13035917472" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp
-                        </a>
-
-                        <a class="button button-default w-100" href="sms:+13035917472" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-sms.svg" alt="SMS Icon">Send us a message
-                        </a>
-
-                        <a class="button button-default w-100" href="mailto:hello@dylanshomomadegoods.com" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email Us
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6">
-                    <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
-                      <div class="card-body text-center pb-2">
-                        <h3 class="card-title h5 mb-3">More Links 🔗</h3>
-
-                        <a class="button button-cal w-100" href="#" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/cal.svg" alt="Cal.com Logo">Schedule
-                        </a>
-
-                        <a class="button button-default w-100" href="#" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-shopping-bag.svg" alt="Shopping Bag Icon">Visit Our Shop
-                        </a>
-
-                        <a class="button button-default w-100" href="#" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Leave us a review
-                        </a>
-                        
-                        <a class="button button
