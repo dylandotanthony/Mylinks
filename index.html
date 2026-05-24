@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Dylan's HomoMade Goods</title>
-    <link rel="icon" type="image/x-icon" href="/images/Logo.png"> 
+    <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
 
     <meta name="description" content="Replace this with your own, this appears in search results and when sharing.">
 
@@ -39,15 +39,16 @@
       }
 
       /* 2. Base Structural Styling */
-      .avatar {
-          width: 96px;
-          height: 96px;
+      
+      /* NEW: Banner Image Styling */
+      .banner-img {
+          width: 100%;
+          height: auto;
+          max-height: 250px;
           object-fit: cover;
+          border-radius: 16px;
           margin: 0 auto 20px;
           display: block;
-      }
-      .avatar--rounded {
-          border-radius: 50%;
       }
 
       /* Buttons & Cards with black border */
@@ -81,6 +82,15 @@
           width: 24px;
           height: 24px;
           margin-right: 12px;
+      }
+      
+      /* Special rounded icon class for your logo on buttons */
+      .icon-logo {
+          width: 24px;
+          height: 24px;
+          margin-right: 12px;
+          border-radius: 50%;
+          object-fit: cover;
       }
 
       /* Official Facebook Blue Button Styling */
@@ -148,156 +158,4 @@
           filter: brightness(0) invert(1);
       }
 
-      .accordion-button:not(.collapsed) {
-          background-color: rgba(0,0,0,0.05);
-          color: inherit;
-          box-shadow: none;
-      }
-    </style>
-  
-  </head>
-
-<body>
-
-    <div class="container pb-5 text-center">
-        <div class="column">
-
-            <img class="avatar avatar--rounded shadow-sm" src="images/Logo.png?v=2" alt="Dylan's HomoMade Goods Logo">
-
-            <h1 class="bg-white px-5 py-3 rounded-pill shadow-sm d-inline-block mt-3 mb-3 border border-dark">
-              <div style="font-family: 'Great Vibes', cursive; font-size: 3rem; color: black; line-height: 1.1;">Dylan's HomoMade Goods</div>
-            </h1>
-
-            <p class="bg-white p-3 rounded-4 shadow-sm mb-4 border border-dark" style="color: black;">Crusty & Baked to Order 🌈🥖 Toaster-ready, small-batch sourdough made with love, pride, 
-              & a wild lil’ starter named Crustpell Roan 💅 Get them carbs 🤤.</p>
-
-            <div class="button-stack mt-4" role="navigation">
-                
-                <div class="row g-4 text-start">
-
-                  <div class="col-12">
-                    <div class="card shadow-sm border-0">
-                      <div class="card-body text-center d-flex flex-column justify-content-center pb-3">
-                        <h3 class="card-title h4 mb-3 mt-2 font-weight-bold">Fresh Sourdough 🛒</h3>
-                        <p class="mb-4 text-muted">Order your loaves, bagels, english muffs, and specialty focaccia directly from our shop for delivery or pickup!</p>
-                        
-                        <a class="button button-default" href="https://bakesy.shop/b/dylans-homomade-goods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="/images/Logo.png" alt="Shopping Bag Icon">Get Crusty
-                        </a>
-
-                        <a class="button button-default mt-2" href="https://bakesy.shop/b/dylans-homomade-goods/faqs" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="FAQ Icon">Frequently Asked Questions
-                        </a>
-
-                        <div class="accordion mt-3 w-100" id="breadCareAccordion">
-                          <div class="accordion-item" style="border: none; background: transparent;">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed shadow-sm border border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreadCare" aria-expanded="false" aria-controls="collapseBreadCare" style="border-radius: 50px; font-weight: bold; justify-content: center; border: 1px solid #000;">
-                                💡 Sourdough Care Tips
-                              </button>
-                            </h2>
-                            <div id="collapseBreadCare" class="accordion-collapse collapse" data-bs-parent="#breadCareAccordion">
-                              <div class="accordion-body text-start mt-2 shadow-sm border border-dark" style="background-color: #f8f9fa; border-radius: 12px; font-size: 0.95rem; padding: 20px; color: black;">
-                                <p class="mb-1 fw-bold text-center" style="font-size: 1.1rem;">🥖 Dylan’s HomoMade Goods — Bread Care</p>
-                                <p class="mb-4 text-center fst-italic text-muted">Stay crusty.</p>
-                                
-                                <div style="line-height: 1.6;">
-                                  <p class="mb-3"><strong>🥯 Bagels & English Muffs:</strong><br>Keep in the bread bag 1 day, then move to a loosely closed plastic bag.</p>
-                                  
-                                  <p class="mb-3"><strong>🍞 Loaves:</strong><br>Store in the bread bag 1–2 days. Once cut, transfer to a loosely closed plastic bag. Sourdough stays fresh about 4–5 days at room temp.</p>
-                                  
-                                  <p class="mb-3"><strong>✨ Fresh inclusions:</strong><br>Freeze after 2–3 days once cut for best quality.</p>
-                                  
-                                  <p class="mb-3"><strong>❄️ Freezing:</strong><br>Wrap tightly in plastic wrap, then place in a freezer bag. Slice before freezing for convenience.</p>
-                                  
-                                  <p class="mb-3"><strong>🔥 Refresh:</strong><br>Lightly mist and bake at 350°F for 8–12 minutes. Toast slices as needed.</p>
-                                  
-                                  <p class="mb-3"><strong>🚫 Avoid refrigeration</strong> — it speeds up staling.</p>
-                                  
-                                  <p class="mb-4"><strong>💧 Dry bread?</strong><br>Lightly moisten, wrap in foil, and warm to revive.</p>
-                                </div>
-
-                                <hr class="my-3 border-dark" style="opacity: 0.15;">
-                                <p class="mb-0 text-center fw-bold">Questions? Reach out anytime. 🤍</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="card shadow-sm border-0">
-                      <div class="card-body text-center">
-                        <h3 class="card-title h5 mb-3 font-weight-bold">📅 Sourdough Schedule</h3>
-                        <iframe src="https://calendar.google.com/calendar/embed?src=fa6f05beb1b59977c7330102413a07ac92ddea53dae7249e82ed1dfbd6bd161e%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0; width: 100%; height: 400px; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="card shadow-sm border-0">
-                      <div class="card-body text-center pb-2">
-                        <h3 class="card-title h5 mb-3 font-weight-bold">Follow the Crust 🥖</h3>
-                        
-                        <a class="button button-facebook" href="https://www.facebook.com/DylansHomoMadeGoods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Find us on Facebook
-                        </a>
-
-                        <a class="button button-instagram" href="https://www.instagram.com/dylanshomomadegood" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-
-                        <a class="button button-tiktok" href="https://www.tiktok.com/@dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">TikTok
-                        </a>
-
-                        <a class="button button-linkedin" href="https://www.linkedin.com/company/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn
-                        </a>
-
-                        <a class="button button-nextdoor" href="https://nextdoor.com/page/dylans-homomade-goods-westminster-co/" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Nextdoor Logo">Find us on Nextdoor
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="card shadow-sm border-0">
-                      <div class="card-body text-center pb-2">
-                        <h3 class="card-title h5 mb-3 font-weight-bold">Get in Touch 📱</h3>
-                        <a class="button button-whatsapp" href="https://wa.me/13035917472" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp
-                        </a>
-                        <a class="button" href="sms:+13035917472" target="_blank" rel="noopener" role="button">Send us a message</a>
-                        <a class="button" href="mailto:hello@dylanshomomadegoods.com" target="_blank" rel="noopener" role="button">Email Us</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="card shadow-sm border-0">
-                      <div class="card-body text-center pb-2">
-                        <h3 class="card-title h5 mb-3 font-weight-bold">Reviews & Updates 💌</h3>
-                        <a class="button" href="https://bakesy.shop/b/dylans-homomade-goods/reviews" target="_blank" rel="noopener" role="button">Bakesy Reviews</a>
-                        <a class="button" href="https://g.page/r/CRrDIEmyyP6HEAE/review" target="_blank" rel="noopener" role="button">Google Reviews</a>
-                        <a class="button" href="https://subscribepage.io/JWJH7P" target="_blank" rel="noopener" role="button">Subscribe to Emails</a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div> 
-            </div>
-
-            <footer class="mt-5 text-center" style="color: #000;">
-              <a href="privacy.html" style="color: #000;">Privacy Policy</a>
-            </footer>
-
-        </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  
-</body>
-</html>
+      .accordion-button:not
