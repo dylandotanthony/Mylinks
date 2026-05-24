@@ -40,7 +40,7 @@
 
       /* 2. Base Structural Styling */
       
-      /* Banner Image Styling - Shows full uncropped height */
+      /* Banner Image Styling */
       .banner-img {
           width: 100%;
           height: auto;
@@ -82,7 +82,6 @@
           margin-right: 12px;
       }
       
-      /* Special rounded icon class for your logo on buttons */
       .icon-logo {
           width: 24px;
           height: 24px;
@@ -91,70 +90,55 @@
           object-fit: cover;
       }
 
-      /* Official Facebook Blue Button Styling */
-      .button-facebook {
-          background-color: #1877F2 !important;
-          color: #ffffff !important;
+      /* NEW: Social Bar Circular Button Styling */
+      .social-circle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          border: 1px solid #000000;
+          transition: transform 0.2s ease, filter 0.2s ease;
       }
-      .button-facebook:hover {
+      .social-circle:hover {
+          transform: translateY(-3px);
           filter: brightness(0.9);
-          color: #ffffff !important;
       }
-      .button-facebook img {
+      .social-circle img {
+          width: 22px;
+          height: 22px;
           filter: brightness(0) invert(1);
       }
 
-      /* Official LinkedIn Blue Button Styling */
-      .button-linkedin {
-          background-color: #0077B5 !important;
-          color: #ffffff !important;
-      }
-      .button-linkedin:hover {
-          filter: brightness(0.9);
-          color: #ffffff !important;
-      }
-      .button-linkedin img {
-          filter: brightness(0) invert(1);
-      }
+      /* Official Colors for Social Bar & Big Buttons */
+      .bg-facebook { background-color: #1877F2 !important; }
+      .bg-instagram { background-color: #E1306C !important; } /* Standard IG pinkish-red */
+      .bg-tiktok { background-color: #000000 !important; }
+      .bg-linkedin { background-color: #0077B5 !important; }
+      .bg-nextdoor { background-color: #19975D !important; }
+      .bg-whatsapp { background-color: #25D366 !important; }
 
-      /* TikTok Black Button Styling */
-      .button-tiktok {
-          background-color: #000000 !important;
-          color: #ffffff !important;
-      }
-      .button-tiktok:hover {
-          filter: brightness(0.85);
-          color: #ffffff !important;
-      }
-      .button-tiktok img {
-          filter: brightness(0) invert(1);
-      }
+      /* Big Button Legacy Classes */
+      .button-facebook { background-color: #1877F2 !important; color: #ffffff !important; }
+      .button-facebook:hover { filter: brightness(0.9); color: #ffffff !important; }
+      .button-facebook img { filter: brightness(0) invert(1); }
 
-      /* Official WhatsApp Green Button Styling */
-      .button-whatsapp {
-          background-color: #25D366 !important;
-          color: #ffffff !important;
-      }
-      .button-whatsapp:hover {
-          filter: brightness(0.9);
-          color: #ffffff !important;
-      }
-      .button-whatsapp img {
-          filter: brightness(0) invert(1);
-      }
+      .button-linkedin { background-color: #0077B5 !important; color: #ffffff !important; }
+      .button-linkedin:hover { filter: brightness(0.9); color: #ffffff !important; }
+      .button-linkedin img { filter: brightness(0) invert(1); }
 
-      /* Official Nextdoor Brand Green Button Styling */
-      .button-nextdoor {
-          background-color: #19975D !important;
-          color: #ffffff !important;
-      }
-      .button-nextdoor:hover {
-          filter: brightness(0.9);
-          color: #ffffff !important;
-      }
-      .button-nextdoor img {
-          filter: brightness(0) invert(1);
-      }
+      .button-tiktok { background-color: #000000 !important; color: #ffffff !important; }
+      .button-tiktok:hover { filter: brightness(0.85); color: #ffffff !important; }
+      .button-tiktok img { filter: brightness(0) invert(1); }
+
+      .button-whatsapp { background-color: #25D366 !important; color: #ffffff !important; }
+      .button-whatsapp:hover { filter: brightness(0.9); color: #ffffff !important; }
+      .button-whatsapp img { filter: brightness(0) invert(1); }
+
+      .button-nextdoor { background-color: #19975D !important; color: #ffffff !important; }
+      .button-nextdoor:hover { filter: brightness(0.9); color: #ffffff !important; }
+      .button-nextdoor img { filter: brightness(0) invert(1); }
 
       .accordion-button:not(.collapsed) {
           background-color: rgba(0,0,0,0.05);
@@ -176,10 +160,28 @@
               Dylan's HomoMade Goods
             </h1>
 
-            <p class="bg-white p-3 rounded-4 shadow-sm mb-4 border border-dark" style="color: black;">Crusty & Baked to Order 🌈🥖 Toaster-ready, small-batch sourdough made with love, pride, 
+            <p class="bg-white p-3 rounded-4 shadow-sm mb-3 border border-dark" style="color: black;">Crusty & Baked to Order 🌈🥖 Toaster-ready, small-batch sourdough made with love, pride, 
               & a wild lil’ starter named Crustpell Roan 💅 Get them carbs 🤤.</p>
 
-            <div class="button-stack mt-4" role="navigation">
+            <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
+              <a href="https://www.facebook.com/DylansHomoMadeGoods" class="social-circle bg-facebook shadow-sm" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/icons/facebook.svg" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/dylanshomomadegood" class="social-circle bg-instagram shadow-sm" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="images/icons/instagram.svg" alt="Instagram">
+              </a>
+              <a href="https://www.tiktok.com/@dylanshomomadegoods" class="social-circle bg-tiktok shadow-sm" target="_blank" rel="noopener" aria-label="TikTok">
+                <img src="images/icons/tiktok.svg" alt="TikTok">
+              </a>
+              <a href="https://www.linkedin.com/company/dylanshomomadegoods" class="social-circle bg-linkedin shadow-sm" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="images/icons/linkedin.svg" alt="LinkedIn">
+              </a>
+              <a href="https://nextdoor.com/page/dylans-homomade-goods-westminster-co/" class="social-circle bg-nextdoor shadow-sm" target="_blank" rel="noopener" aria-label="Nextdoor">
+                <img src="images/icons/Nextdoor.svg" alt="Nextdoor">
+              </a>
+            </div>
+
+            <div class="button-stack mt-2" role="navigation">
                 
                 <div class="row g-4 text-start">
 
@@ -211,17 +213,11 @@
                                 
                                 <div style="line-height: 1.6;">
                                   <p class="mb-3"><strong>🥯 Bagels & English Muffs:</strong><br>Keep in the bread bag 1 day, then move to a loosely closed plastic bag.</p>
-                                  
                                   <p class="mb-3"><strong>🍞 Loaves:</strong><br>Store in the bread bag 1–2 days. Once cut, transfer to a loosely closed plastic bag. Sourdough stays fresh about 4–5 days at room temp.</p>
-                                  
                                   <p class="mb-3"><strong>✨ Fresh inclusions:</strong><br>Freeze after 2–3 days once cut for best quality.</p>
-                                  
                                   <p class="mb-3"><strong>❄️ Freezing:</strong><br>Wrap tightly in plastic wrap, then place in a freezer bag. Slice before freezing for convenience.</p>
-                                  
                                   <p class="mb-3"><strong>🔥 Refresh:</strong><br>Lightly mist and bake at 350°F for 8–12 minutes. Toast slices as needed.</p>
-                                  
                                   <p class="mb-3"><strong>🚫 Avoid refrigeration</strong> — it speeds up staling.</p>
-                                  
                                   <p class="mb-4"><strong>💧 Dry bread?</strong><br>Lightly moisten, wrap in foil, and warm to revive.</p>
                                 </div>
 
