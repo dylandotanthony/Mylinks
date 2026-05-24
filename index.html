@@ -26,6 +26,7 @@
       .btn-outline-info {
           border: 2px solid #0dcaf0 !important;
           color: #000000 !important;
+          font-size: 1rem !important;
           font-weight: 600 !important;
           padding: 12px 20px !important;
           border-radius: 50px !important;
@@ -58,8 +59,13 @@
       .btn-payment:hover { background-color: #e9ecef !important; }
 
       .icon-logo { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
-      .accordion-button { border-radius: 50px !important; font-weight: bold; border: 2px solid #0dcaf0 !important; }
-      .accordion-button:not(.collapsed) { background-color: #0dcaf0 !important; color: #ffffff !important; box-shadow: none; }
+.accordion-button {
+    font-size: 1rem !important; /* Match the 1rem size */
+    font-weight: 600 !important; /* Match the 600 weight */
+    padding: 12px 20px !important;
+    border-radius: 50px !important;
+    border: 2px solid #0dcaf0 !important;
+}      .accordion-button:not(.collapsed) { background-color: #0dcaf0 !important; color: #ffffff !important; box-shadow: none; }
 
       .social-circle { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; border: 1px solid #000000; transition: transform 0.2s ease, filter 0.2s ease; }
       .social-circle:hover { transform: translateY(-3px); filter: brightness(0.9); }
