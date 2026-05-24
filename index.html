@@ -24,24 +24,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <style>
-      /* 1. Shrink all buttons to roughly half their original height/padding */
+      /* 1. Shrink all buttons to half their width and keep them centered */
       .button-stack .button, 
       .button-stack .button-nextdoor {
-          padding: 8px 16px !important;
-          font-size: 14px !important;
-          min-height: 40px !important;
-          line-height: 1.2 !important;
-          margin-bottom: 8px !important;
+          width: 50% !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          margin-bottom: 12px !important;
       }
 
-      /* 2. Scale the icons down so they fit the smaller buttons */
-      .button-stack .icon {
-          width: 18px !important;
-          height: 18px !important;
-          margin-right: 8px !important;
-      }
-
-      /* 3. Nextdoor Button Style (Built for Bootstrap) */
+      /* 2. Nextdoor Button Style (Built for Bootstrap) */
       .button-nextdoor {
           background-color: #82D100 !important;
           color: white !important;
@@ -57,6 +49,14 @@
       .button-nextdoor:hover {
           opacity: 0.85;
           color: white !important;
+      }
+
+      /* Media Query: Make buttons slightly wider on tiny phone screens so text fits */
+      @media (max-width: 576px) {
+          .button-stack .button, 
+          .button-stack .button-nextdoor {
+              width: 75% !important;
+          }
       }
     </style>
   
@@ -171,4 +171,7 @@
                         </a>
 
                         <a class="button button-default w-100" href="#" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-review.
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Leave us a review
+                        </a>
+                        
+                        <a class="button button
