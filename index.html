@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html class="theme-auto" lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Dylan's HomoMade Goods</title>
     <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
+
     <meta name="description" content="Small-batch sourdough bakery in Westminster, CO.">
     <meta name="keywords" content="sourdough, bakery, homemade, bread, dylan's homomade goods">
     <meta rel="canonical" href="https://yourwebsite.com">
@@ -12,6 +15,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -19,12 +23,36 @@
     <style>
       html, body { background-color: #52C4FA !important; min-height: 100vh; }
       .container { max-width: 680px !important; margin: 0 auto !important; padding-top: 2rem; }
+
+      /* Banner Container */
       .banner-container { position: relative; margin-bottom: 60px; border-radius: 16px; }
       .banner-img { width: 100%; height: auto; border-radius: 16px; display: block; }
+
+      /* Card Styling */
       .card { border: 1px solid #000000 !important; border-radius: 20px !important; }
-      /* Specific Venmo/PayPal Styling */
-      .button-venmo { background-color: #3d95ce !important; color: #ffffff !important; }
-      .button-paypal { background-color: #00457c !important; color: #ffffff !important; }
+
+      /* Base Button Styles */
+      .button {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          padding: 12px 20px !important;
+          border-radius: 50px !important;
+          text-decoration: none !important;
+          font-weight: 600 !important;
+          margin-bottom: 12px !important;
+          width: 100% !important;
+          border: 1px solid #000000 !important;
+          color: #000000 !important;
+          background-color: #ffffff;
+      }
+      .button:hover { filter: brightness(0.9); color: #000000; }
+
+      /* Specific Payment/Social Styles */
+      .button-venmo { background-color: #3d95ce !important; color: #ffffff !important; border: 1px solid #000 !important; }
+      .button-paypal { background-color: #00457c !important; color: #ffffff !important; border: 1px solid #000 !important; }
+      .button-whatsapp { background-color: #25D366 !important; color: #ffffff !important; border: 1px solid #128C7E !important; }
+      
       .btn-outline-info {
           border: 2px solid #0dcaf0 !important;
           color: #000000 !important;
@@ -40,7 +68,7 @@
           background-color: transparent !important;
       }
       .btn-outline-info:hover { background-color: #0dcaf0 !important; color: #ffffff !important; }
-      
+
       .btn-cta {
           border: 3px solid #0dcaf0 !important;
           color: #000000 !important;
@@ -60,14 +88,17 @@
       .btn-payment { background-color: #f8f9fa !important; border: 2px solid #000000 !important; color: #000000 !important; font-weight: 700 !important; width: 100% !important; padding: 12px !important; border-radius: 50px !important; }
       .btn-payment:hover { background-color: #e9ecef !important; }
 
+      .icon { width: 24px; height: 24px; margin-right: 12px; }
       .icon-logo { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
-.accordion-button {
-    font-size: 1rem !important; /* Match the 1rem size */
-    font-weight: 600 !important; /* Match the 600 weight */
-    padding: 12px 20px !important;
-    border-radius: 50px !important;
-    border: 2px solid #0dcaf0 !important;
-}      .accordion-button:not(.collapsed) { background-color: #0dcaf0 !important; color: #ffffff !important; box-shadow: none; }
+
+      .accordion-button {
+          font-size: 1rem !important;
+          font-weight: 600 !important;
+          padding: 12px 20px !important;
+          border-radius: 50px !important;
+          border: 2px solid #0dcaf0 !important;
+      }
+      .accordion-button:not(.collapsed) { background-color: #0dcaf0 !important; color: #ffffff !important; box-shadow: none; }
 
       .social-circle { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; border: 1px solid #000000; transition: transform 0.2s ease, filter 0.2s ease; }
       .social-circle:hover { transform: translateY(-3px); filter: brightness(0.9); }
@@ -108,7 +139,7 @@
                   <div class="col-12">
                     <div class="card shadow-sm border-0">
                       <div class="card-body text-center d-flex flex-column justify-content-center pb-3">
-                        <h3 class="card-title h4 mb-3 mt-2 font-weight-bold">Fresh Sourdough 🛒</h3>
+                        <h3 class="card-title h4 mb-3 mt-2 font-weight-bold">🍞 Fresh Sourdough 🍞</h3>
                         <p class="mb-4 text-muted">Order your loaves, bagels, english muffs, and specialty focaccia directly from our shop!</p>
                         <a class="btn btn-cta" href="https://bakesy.shop/b/dylans-homomade-goods" target="_blank" rel="noopener">
                           <img class="icon-logo" aria-hidden="true" src="images/Logo.png?v=2" alt="Logo" style="margin-right: 12px;">Order Here, Get Crusty<img class="icon-logo" aria-hidden="true" src="images/Logo.png?v=2" alt="Logo" style="margin-left: 12px;">
@@ -119,12 +150,12 @@
                           <div class="accordion-item" style="border: none; background: transparent;">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreadCare" aria-expanded="false" aria-controls="collapseBreadCare">
-                                <span style="flex: 1; text-align: center;">💡 Sourdough Care Tips</span>
+                                <span style="flex: 1; text-align: center;">💡 Sourdough Care Tips 🥖</span>
                               </button>
                             </h2>
                             <div id="collapseBreadCare" class="accordion-collapse collapse" data-bs-parent="#breadCareAccordion">
                               <div class="accordion-body text-start mt-2 border border-dark" style="background-color: #f8f9fa; border-radius: 20px; font-size: 0.95rem; padding: 20px; color: black;">
-                                <p class="mb-1 fw-bold text-center" style="font-size: 1.1rem;">🥖 Bread Care</p>
+                                <p class="mb-1 fw-bold text-center" style="font-size: 1.1rem;">🥖 Bread Care ❤️</p>
                                 <p style="line-height: 1.6;"><strong>🥯 Bagels & English Muffs:</strong> Keep in bread bag 1 day, then move to a loosely closed plastic bag.<br>
                                 <strong>🍞 Loaves:</strong> Store 1–2 days. Once cut, transfer to a plastic bag. Stays fresh 4–5 days at room temp.<br>
                                 <strong>✨ Inclusions/Focaccia:</strong> Freeze after 2–3 days if not consumed.<br>
@@ -146,23 +177,37 @@
                       <div class="card-body text-center">
                         <h3 class="card-title h5 mb-3 font-weight-bold">The Latest on DHG </h3>
                         <div class="d-flex justify-content-center w-100">
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDylansHomoMadeGoods&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="100%" height="500" style="border:none;overflow:hidden;display:block;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                        </div>
+                          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDylansHomoMadeGoods&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="100%" height="500" style="border:none;overflow:hidden;display:block;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-12"><div class="card shadow-sm border-0"><div class="card-body text-center pb-2"><h3 class="card-title h5 mb-3 font-weight-bold">Get in Touch 📱</h3><div class="row g-2 mb-2"><div class="col-6"><a class="btn btn-outline-info m-0" href="sms:+13035917472" target="_blank" rel="noopener">Text us</a></div><div class="col-6"><a class="btn btn-outline-info m-0" href="mailto:hello@dylanshomomadegoods.com" target="_blank" rel="noopener">Email Us</a></div></div><a class="btn btn-whatsapp" href="https://wa.me/13035917472" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a></div></div></div>
+                  <div class="col-12">
+                    <div class="card shadow-sm border-0">
+                      <div class="card-body text-center">
+                        <h3 class="card-title h5 mb-3 font-weight-bold">📱 Get in Touch 📧 </h3>
+                        <div class="row g-2 mb-2">
+                          <div class="col-6"><a class="btn btn-outline-info m-0" href="sms:+13035917472" target="_blank" rel="noopener">Text us</a></div>
+                          <div class="col-6"><a class="btn btn-outline-info m-0" href="mailto:hello@dylanshomomadegoods.com" target="_blank" rel="noopener">Email Us</a></div>
+                        </div>
+                        <a class="button button-whatsapp" href="https://wa.me/13035917472" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp
+                        </a>
+                      </div>
+                    </div>
+                  </div>
 
-                  <div class="col-12"><div class="card shadow-sm border-0"><div class="card-body text-center pb-2"><h3 class="card-title h5 mb-3 font-weight-bold">Reviews & Updates 💌</h3><div class="row g-2"><div class="col-6"><a class="btn btn-outline-info m-0" href="https://bakesy.shop/b/dylans-homomade-goods/reviews" target="_blank" rel="noopener">Reviews</a></div><div class="col-6"><a class="btn btn-outline-info m-0" href="https://g.page/r/CRrDIEmyyP6HEAE/review" target="_blank" rel="noopener">Google</a></div><div class="col-6"><a class="btn btn-outline-info m-0" href="https://voyagedenver.com/interview/check-out-dylan-daughenbaughs-story" target="_blank" rel="noopener">Dylan's Story</a></div><div class="col-6"><a class="btn btn-outline-info m-0" href="https://subscribepage.io/JWJH7P" target="_blank" rel="noopener">Subscribe</a></div></div></div></div></div>
+                  <div class="col-12"><div class="card shadow-sm border-0"><div class="card-body text-center pb-2"><h3 class="card-title h5 mb-3 font-weight-bold">📝 Reviews & Updates 💌</h3><div class="row g-2"><div class="col-6"><a class="btn btn-outline-info m-0" href="https://bakesy.shop/b/dylans-homomade-goods/reviews" target="_blank" rel="noopener">Reviews</a></div><div class="col-6"><a class="btn btn-outline-info m-0" href="https://g.page/r/CRrDIEmyyP6HEAE/review" target="_blank" rel="noopener">Google</a></div><div class="col-6"><a class="btn btn-outline-info m-0" href="https://voyagedenver.com/interview/check-out-dylan-daughenbaughs-story" target="_blank" rel="noopener">Dylan's Story</a></div><div class="col-6"><a class="btn btn-outline-info m-0" href="https://subscribepage.io/JWJH7P" target="_blank" rel="noopener">Subscribe</a></div></div></div></div></div>
 
                   <div class="col-12">
                     <div class="card shadow-sm border-0">
                       <div class="card-body text-center pb-3">
-                        <h3 class="card-title h5 mb-3 mt-2 font-weight-bold">Support the Bakery 🥐</h3>
+                        <h3 class="card-title h5 mb-3 mt-2 font-weight-bold">📝 Support the Bakery </h3>
                         <div class="mb-3"><img src="images/venmo-qr.png" alt="Venmo QR Code" class="img-fluid border border-dark rounded-3" style="max-width: 200px;"></div>
                         <div class="row g-2">
-                           <div class="col-6"><a class="btn btn-payment" href="https://venmo.com/dylanshomomadegoods" target="_blank" rel="noopener">Venmo</a></div>
-                           <div class="col-6"><a class="btn btn-payment" href="https://paypal.com/dylanshomomadegoods" target="_blank" rel="noopener">PayPal</a></div>
+                           <div class="col-6"><a class="button button-venmo" href="https://venmo.com/dylanshomomadegoods" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/venmo.svg" alt="Venmo Logo">Venmo</a></div>
+                           <div class="col-6"><a class="button button-paypal" href="https://paypal.com/dylanshomomadegoods" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/paypal.svg" alt="PayPal Logo">PayPal</a></div>
                         </div>
                       </div>
                     </div>
