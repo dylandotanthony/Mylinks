@@ -122,7 +122,7 @@
           filter: brightness(0) invert(1);
       }
 
-      /* NEW: Official WhatsApp Green Button Styling */
+      /* Official WhatsApp Green Button Styling */
       .button-whatsapp {
           background-color: #25D366 !important;
           color: #ffffff !important;
@@ -135,14 +135,17 @@
           filter: brightness(0) invert(1);
       }
 
-      /* Nextdoor Button Exception */
+      /* Official Nextdoor Brand Green Button Styling */
       .button-nextdoor {
-          background-color: #82D100 !important;
+          background-color: #19975D !important;
           color: #ffffff !important;
       }
       .button-nextdoor:hover {
           filter: brightness(0.9);
           color: #ffffff !important;
+      }
+      .button-nextdoor img {
+          filter: brightness(0) invert(1);
       }
 
       .accordion-button:not(.collapsed) {
@@ -176,13 +179,17 @@
                     <div class="card shadow-sm border-0">
                       <div class="card-body text-center d-flex flex-column justify-content-center pb-3">
                         <h3 class="card-title h4 mb-3 mt-2 font-weight-bold">Fresh Sourdough 🛒</h3>
-                        <p class="mb-4 text-muted">Order your loaves, bagels, and specialty focaccia directly from our shop!</p>
+                        <p class="mb-4 text-muted">Order your loaves, bagels, english muffs, and specialty focaccia directly from our shop for delivery or pickup!</p>
                         
                         <a class="button button-default" href="https://bakesy.shop/b/dylans-homomade-goods" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-shopping-bag.svg" alt="Shopping Bag Icon">Shop Now
+                          <img class="icon" aria-hidden="true" src="/images/Logo.png" alt="Shopping Bag Icon">Get Crusty
                         </a>
 
-                        <div class="accordion mt-2 w-100" id="breadCareAccordion">
+                        <a class="button button-default mt-2" href="https://bakesy.shop/b/dylans-homomade-goods/faqs" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="FAQ Icon">Frequently Asked Questions
+                        </a>
+
+                        <div class="accordion mt-3 w-100" id="breadCareAccordion">
                           <div class="accordion-item" style="border: none; background: transparent;">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed shadow-sm border border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreadCare" aria-expanded="false" aria-controls="collapseBreadCare" style="border-radius: 50px; font-weight: bold; justify-content: center; border: 1px solid #000;">
@@ -202,10 +209,7 @@
                             </div>
                           </div>
                         </div>
-                        
-                        <a class="button button-default mt-3" href="https://bakesy.shop/b/dylans-homomade-goods/faqs" target="_blank" rel="noopener" role="button">
-                          <img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="FAQ Icon">Frequently Asked Questions
-                        </a>
+
                       </div>
                     </div>
                   </div>
@@ -238,7 +242,9 @@
                           <img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn
                         </a>
 
-                        <a class="button button-nextdoor" href="https://nextdoor.com/page/dylans-homomade-goods-westminster-co/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/nextdoor.svg.svg" alt="nextdoorLogo"> Find us on Nextdoor</a>
+                        <a class="button button-nextdoor" href="https://nextdoor.com/page/dylans-homomade-goods-westminster-co/" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Nextdoor Logo">Find us on Nextdoor
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -247,11 +253,9 @@
                     <div class="card shadow-sm border-0">
                       <div class="card-body text-center pb-2">
                         <h3 class="card-title h5 mb-3 font-weight-bold">Get in Touch 📱</h3>
-                        
                         <a class="button button-whatsapp" href="https://wa.me/13035917472" target="_blank" rel="noopener" role="button">
                           <img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp
                         </a>
-                        
                         <a class="button" href="sms:+13035917472" target="_blank" rel="noopener" role="button">Send us a message</a>
                         <a class="button" href="mailto:hello@dylanshomomadegoods.com" target="_blank" rel="noopener" role="button">Email Us</a>
                       </div>
