@@ -33,12 +33,14 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
-
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
   </head>
 
 <body>
 
-    <div class="container">
+    <div class="container pb-5"> <!-- Added some padding bottom for spacing -->
         <div class="column">
 
             <img class="avatar avatar--rounded" src="images/Logo.png" srcset="images/avatar@2x.png 2x" alt="LittleLink">
@@ -51,122 +53,142 @@
               & a wild lil’ starter named Crustpell Roan 💅 Get them carbs 🤤.</p>
 
             <!-- All your buttons go here -->
-            <div class="button-stack" role="navigation">
+            <div class="button-stack mt-4" role="navigation">
+                
+                <!-- Bootstrap Grid Container -->
+                <div class="row g-4"> <!-- g-4 adds perfect even spacing between all cards -->
 
-                <!-- ======================= -->
-                <!--  GOOGLE CALENDAR EMBED  -->
-                <!-- ======================= -->
-                <div class="link-block" style="margin-bottom: 30px; text-align: center; width: 100%;">
-                  <h3 style="margin-bottom: 15px;">📅 Sourdough Schedule</h3>
-                  
-                  <iframe src="https://calendar.google.com/calendar/embed?src=fa6f05beb1b59977c7330102413a07ac92ddea53dae7249e82ed1dfbd6bd161e%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0; width: 100%; height: 400px; border-radius: 10px; box-sizing: border-box;" frameborder="0" scrolling="no"></iframe>
-                </div>
+                  <!-- ======================= -->
+                  <!--  GOOGLE CALENDAR EMBED  -->
+                  <!-- ======================= -->
+                  <div class="col-12"> <!-- col-12 makes it full width -->
+                    <div class="card shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
+                      <div class="card-body text-center">
+                        <h3 class="card-title h5 mb-3">📅 Sourdough Schedule</h3>
+                        <iframe src="https://calendar.google.com/calendar/embed?src=fa6f05beb1b59977c7330102413a07ac92ddea53dae7249e82ed1dfbd6bd161e%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0; width: 100%; height: 400px; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>
+                      </div>
+                    </div>
+                  </div>
 
-                <!-- ======================= -->
-                <!--   SOCIAL MEDIA BLOCK    -->
-                <!-- ======================= -->
-                <div class="link-block" style="margin-bottom: 30px;">
-                  <h3 style="text-align: center; margin-bottom: 15px;">Follow the Crust 🥖</h3>
+                  <!-- ======================= -->
+                  <!--   SOCIAL MEDIA BLOCK    -->
+                  <!-- ======================= -->
+                  <div class="col-sm-6"> <!-- col-sm-6 makes it half width next to payments -->
+                    <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
+                      <div class="card-body text-center pb-2">
+                        <h3 class="card-title h5 mb-3">Follow the Crust 🥖</h3>
 
-                  <a class="button button-faceb" href="https://www.facebook.com/DylansHomoMadeGoods" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Find us on Facebook
-                  </a>
+                        <a class="button button-faceb w-100" href="https://www.facebook.com/DylansHomoMadeGoods" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Find us on Facebook
+                        </a>
 
-                  <a class="button button-instagram" href="https://www.instagram.com/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram
-                  </a>
+                        <a class="button button-instagram w-100" href="https://www.instagram.com/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram
+                        </a>
 
-                  <a class="button button-tiktok" href="https://www.tiktok.com/@dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">TikTok
-                  </a>
+                        <a class="button button-tiktok w-100" href="https://www.tiktok.com/@dylanshomomadegoods" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">TikTok
+                        </a>
 
-                  <a class="button button-linked" href="https://www.linkedin.com/in/dylandaughenbaugh/" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn
-                  </a>
-                </div>
+                        <a class="button button-linked w-100" href="https://www.linkedin.com/in/dylandaughenbaugh/" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn
+                        </a>
+                      </div>
+                    </div>
+                  </div>
 
-                <!-- ======================= -->
-                <!--      PAYMENT BLOCK      -->
-                <!-- ======================= -->
-                <div class="link-block" style="margin-bottom: 30px;">
-                  <h3 style="text-align: center; margin-bottom: 15px;">Paylinks 💸</h3>
+                  <!-- ======================= -->
+                  <!--      PAYMENT BLOCK      -->
+                  <!-- ======================= -->
+                  <div class="col-sm-6">
+                    <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
+                      <div class="card-body text-center pb-2">
+                        <h3 class="card-title h5 mb-3">Paylinks 💸</h3>
 
-                  <a class="button button-venmo" href="https://account.venmo.com/u/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/venmo.svg" alt="Venmo Logo">Venmo
-                  </a>
+                        <a class="button button-venmo w-100" href="https://account.venmo.com/u/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/venmo.svg" alt="Venmo Logo">Venmo
+                        </a>
 
-                  <a class="button button-paypal" href="https://www.paypal.com/biz/profile/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/paypal.svg" alt="PayPal Logo">PayPal
-                  </a>
+                        <a class="button button-paypal w-100" href="https://www.paypal.com/biz/profile/dylanshomomadegoods" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/paypal.svg" alt="PayPal Logo">PayPal
+                        </a>
 
-                  <a class="button button-amazon" href="https://www.amazon.com/registries/gl/guest-view/1H8P7FQ2QP6O5?ref_=cm_sw_r_cp_ud_ggr-subnav-share_67DF586JW5W3XPYQJHNV" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Wishlist Logo">Amazon Wishlist
-                  </a>
-                </div>
+                        <a class="button button-amazon w-100" href="https://www.amazon.com/registries/gl/guest-view/1H8P7FQ2QP6O5?ref_=cm_sw_r_cp_ud_ggr-subnav-share_67DF586JW5W3XPYQJHNV" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Wishlist Logo">Amazon Wishlist
+                        </a>
+                      </div>
+                    </div>
+                  </div>
 
-                <!-- ======================= -->
-                <!--      CONTACT BLOCK      -->
-                <!-- ======================= -->
-                <div class="link-block" style="margin-bottom: 30px;">
-                  <h3 style="text-align: center; margin-bottom: 15px;">Get in Touch 📱</h3>
+                  <!-- ======================= -->
+                  <!--      CONTACT BLOCK      -->
+                  <!-- ======================= -->
+                  <div class="col-sm-6">
+                    <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
+                      <div class="card-body text-center pb-2">
+                        <h3 class="card-title h5 mb-3">Get in Touch 📱</h3>
 
-                  <a class="button button-whatsapp" href="https://wa.me/13035917472" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp
-                  </a>
+                        <a class="button button-whatsapp w-100" href="https://wa.me/13035917472" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp
+                        </a>
 
-                  <a class="button button-default" href="sms:+13035917472" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/generic-sms.svg" alt="SMS Icon">Send us a message
-                  </a>
+                        <a class="button button-default w-100" href="sms:+13035917472" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-sms.svg" alt="SMS Icon">Send us a message
+                        </a>
 
-                  <a class="button button-default" href="mailto:hello@dylanshomomadegoods.com" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email Us
-                  </a>
-                </div>
+                        <a class="button button-default w-100" href="mailto:hello@dylanshomomadegoods.com" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email Us
+                        </a>
+                      </div>
+                    </div>
+                  </div>
 
-                <!-- ======================= -->
-                <!--    OTHER QUICK LINKS    -->
-                <!-- ======================= -->
-                <div class="link-block">
-                  <h3 style="text-align: center; margin-bottom: 15px;">More Links 🔗</h3>
+                  <!-- ======================= -->
+                  <!--    OTHER QUICK LINKS    -->
+                  <!-- ======================= -->
+                  <div class="col-sm-6">
+                    <div class="card h-100 shadow-sm border-0" style="background-color: rgba(0,0,0,0.03); border-radius: 12px;">
+                      <div class="card-body text-center pb-2">
+                        <h3 class="card-title h5 mb-3">More Links 🔗</h3>
 
-                  <a class="button button-cal" href="#" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/cal.svg" alt="Cal.com Logo">Schedule with Cal.com
-                  </a>
+                        <a class="button button-cal w-100" href="#" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/cal.svg" alt="Cal.com Logo">Schedule
+                        </a>
 
-                  <a class="button button-default" href="#" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/generic-shopping-bag.svg" alt="Shopping Bag Icon">Visit Our Shop
-                  </a>
+                        <a class="button button-default w-100" href="#" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-shopping-bag.svg" alt="Shopping Bag Icon">Visit Our Shop
+                        </a>
 
-                  <a class="button button-default" href="#" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Leave us a review
-                  </a>
+                        <a class="button button-default w-100" href="#" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Leave us a review
+                        </a>
+                        
+                        <a class="button button-default w-100" href="#" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Homepage Icon">Visit Homepage
+                        </a>
 
-                  <a class="button button-default" href="#" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Homepage Icon">Visit Homepage
-                  </a>
+                        <a class="button button-default w-100" href="#" target="_blank" rel="noopener" role="button">
+                          <img class="icon" aria-hidden="true" src="images/icons/generic-shopping-tag.svg" alt="Shopping Tag Icon">10% Discount
+                        </a>
 
-                  <a class="button button-default" href="#" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/generic-website.svg" alt="Website Icon">Visit Website
-                  </a>
+                      </div>
+                    </div>
+                  </div>
 
-                  <a class="button button-default" href="#" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/generic-shopping-tag.svg" alt="Shopping Tag Icon">10% Discount
-                  </a>
-
-                  <a class="button button-default" href="#" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/generic-computer.svg" alt="Computer Icon">Homelab Setup
-                  </a>
-                </div>
+                </div> <!-- End of Bootstrap Row -->
 
             </div>
 
             <!-- Footer -->
-            <footer>
+            <footer class="mt-5">
               <a href="privacy.html">Privacy Policy</a> | Build your own by forking <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
             </footer>
 
         </div>
     </div>
-
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
 </body>
 </html>
