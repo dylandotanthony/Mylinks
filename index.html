@@ -60,7 +60,7 @@
           text-decoration: none;
           font-weight: 600;
           transition: transform 0.2s ease, filter 0.2s ease;
-          background-color: #ffffff;
+          background-color: #ffffff; /* Classic white */
           color: #000000;
           margin-bottom: 12px !important;
           width: 100% !important;
@@ -79,13 +79,14 @@
           margin-right: 12px;
       }
 
-      /* Special button colors */
-      .button-nextdoor, .button-whatsapp {
-          background-color: #000000 !important;
+      /* Nextdoor Button Exception */
+      .button-nextdoor {
+          background-color: #82D100 !important;
           color: #ffffff !important;
       }
-      .button-nextdoor img, .button-whatsapp img {
-          filter: brightness(0) invert(1);
+      .button-nextdoor:hover {
+          filter: brightness(0.9);
+          color: #ffffff !important;
       }
 
       .accordion-button:not(.collapsed) {
@@ -179,7 +180,7 @@
                     <div class="card shadow-sm border-0">
                       <div class="card-body text-center pb-2">
                         <h3 class="card-title h5 mb-3 font-weight-bold">Get in Touch 📱</h3>
-                        <a class="button button-whatsapp" href="https://wa.me/13035917472" target="_blank" rel="noopener" role="button">WhatsApp</a>
+                        <a class="button" href="https://wa.me/13035917472" target="_blank" rel="noopener" role="button">WhatsApp</a>
                         <a class="button" href="sms:+13035917472" target="_blank" rel="noopener" role="button">Send us a message</a>
                         <a class="button" href="mailto:hello@dylanshomomadegoods.com" target="_blank" rel="noopener" role="button">Email Us</a>
                       </div>
